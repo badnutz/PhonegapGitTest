@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+<head>
+	<title>Simple App</title>
+<body>
+	<button id="simple">Hello Simple App</button>
+	<button id="clear">Clear</button>
+	<div id="result"></div>
+<script src="js/zepto.min.js"></script>
+<script src="js/simple.js"></script>
+<script>
+$("#simple").click(function(){
+		SIMPLE.DoIt($("#result"));
+	});
+$("#clear").click(function(){
+		$("#result").html("");
+	});
+</script>
+</body>
+</head>
+</html>
